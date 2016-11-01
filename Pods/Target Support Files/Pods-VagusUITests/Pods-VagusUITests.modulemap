@@ -1,0 +1,6 @@
+framework module Pods_VagusUITests {
+  umbrella header "Pods-VagusUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

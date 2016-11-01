@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3837AB2CCDD3C495301EFEDA /* Pods_Vagus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C097FB271229862D5D14D35 /* Pods_Vagus.framework */; };
+		4B618D6E0CFF49FD0B1F9E0B /* Pods_VagusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF956710AFD64212AB56678 /* Pods_VagusUITests.framework */; };
+		5B99E3F9DFAAF9C775A53DFB /* Pods_VagusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E4D3A1F763DA910381CE3C /* Pods_VagusTests.framework */; };
+		EC1BDC871DC9035F0025E648 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC1BDC861DC9035F0025E648 /* GoogleService-Info.plist */; };
+		EC3628421DC8C80600F0739C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3628411DC8C80600F0739C /* AppDelegate.swift */; };
+		EC3628441DC8C80600F0739C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3628431DC8C80600F0739C /* ViewController.swift */; };
+		EC3628471DC8C80600F0739C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3628451DC8C80600F0739C /* Main.storyboard */; };
+		EC3628491DC8C80600F0739C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3628481DC8C80600F0739C /* Assets.xcassets */; };
+		EC36284C1DC8C80600F0739C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC36284A1DC8C80600F0739C /* LaunchScreen.storyboard */; };
+		EC3628571DC8C80600F0739C /* VagusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3628561DC8C80600F0739C /* VagusTests.swift */; };
+		EC3628621DC8C80600F0739C /* VagusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3628611DC8C80600F0739C /* VagusUITests.swift */; };
+		EC3628731DC8CA3C00F0739C /* facebookLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3628701DC8CA3C00F0739C /* facebookLogo.png */; };
+		EC3628741DC8CA3C00F0739C /* googleLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3628711DC8CA3C00F0739C /* googleLogo.png */; };
+		EC3628751DC8CA3C00F0739C /* twitterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3628721DC8CA3C00F0739C /* twitterLogo.png */; };
+		EC3628771DC8CFA600F0739C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3628761DC8CFA600F0739C /* LoginViewController.swift */; };
+		EC3628791DC8D19700F0739C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3628781DC8D19700F0739C /* SignUpViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC3628531DC8C80600F0739C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC3628361DC8C80600F0739C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC36283D1DC8C80600F0739C;
+			remoteInfo = Vagus;
+		};
+		EC36285E1DC8C80600F0739C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC3628361DC8C80600F0739C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC36283D1DC8C80600F0739C;
+			remoteInfo = Vagus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3AF956710AFD64212AB56678 /* Pods_VagusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VagusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C097FB271229862D5D14D35 /* Pods_Vagus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vagus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A96B0E1A19D24B8E2435B5F /* Pods-VagusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VagusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VagusTests/Pods-VagusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8406BE248F755D9431229AD4 /* Pods-VagusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VagusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VagusTests/Pods-VagusTests.release.xcconfig"; sourceTree = "<group>"; };
+		94E4D3A1F763DA910381CE3C /* Pods_VagusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VagusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CC4CACA02E143964537194 /* Pods-Vagus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vagus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vagus/Pods-Vagus.debug.xcconfig"; sourceTree = "<group>"; };
+		CCEADAD07D1C0AC609EDFA59 /* Pods-VagusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VagusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VagusUITests/Pods-VagusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB7B59036981D2938F9182B8 /* Pods-Vagus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vagus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vagus/Pods-Vagus.release.xcconfig"; sourceTree = "<group>"; };
+		EC1BDC861DC9035F0025E648 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Vagus/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EC36283E1DC8C80600F0739C /* Vagus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vagus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3628411DC8C80600F0739C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC3628431DC8C80600F0739C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC3628461DC8C80600F0739C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC3628481DC8C80600F0739C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC36284B1DC8C80600F0739C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC36284D1DC8C80600F0739C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3628521DC8C80600F0739C /* VagusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VagusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3628561DC8C80600F0739C /* VagusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagusTests.swift; sourceTree = "<group>"; };
+		EC3628581DC8C80600F0739C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC36285D1DC8C80600F0739C /* VagusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VagusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3628611DC8C80600F0739C /* VagusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagusUITests.swift; sourceTree = "<group>"; };
+		EC3628631DC8C80600F0739C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3628701DC8CA3C00F0739C /* facebookLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookLogo.png; sourceTree = "<group>"; };
+		EC3628711DC8CA3C00F0739C /* googleLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = googleLogo.png; sourceTree = "<group>"; };
+		EC3628721DC8CA3C00F0739C /* twitterLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterLogo.png; sourceTree = "<group>"; };
+		EC3628761DC8CFA600F0739C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EC3628781DC8D19700F0739C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EE4839BEFD3D0CAD1CAD01AA /* Pods-VagusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VagusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VagusUITests/Pods-VagusUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC36283B1DC8C80600F0739C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3837AB2CCDD3C495301EFEDA /* Pods_Vagus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC36284F1DC8C80600F0739C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B99E3F9DFAAF9C775A53DFB /* Pods_VagusTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC36285A1DC8C80600F0739C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B618D6E0CFF49FD0B1F9E0B /* Pods_VagusUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EC6574717807DF5A411CA1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C097FB271229862D5D14D35 /* Pods_Vagus.framework */,
+				94E4D3A1F763DA910381CE3C /* Pods_VagusTests.framework */,
+				3AF956710AFD64212AB56678 /* Pods_VagusUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8336F459E76E6B2F20AB96B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4CC4CACA02E143964537194 /* Pods-Vagus.debug.xcconfig */,
+				EB7B59036981D2938F9182B8 /* Pods-Vagus.release.xcconfig */,
+				5A96B0E1A19D24B8E2435B5F /* Pods-VagusTests.debug.xcconfig */,
+				8406BE248F755D9431229AD4 /* Pods-VagusTests.release.xcconfig */,
+				CCEADAD07D1C0AC609EDFA59 /* Pods-VagusUITests.debug.xcconfig */,
+				EE4839BEFD3D0CAD1CAD01AA /* Pods-VagusUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC3628351DC8C80600F0739C = {
+			isa = PBXGroup;
+			children = (
+				EC3628401DC8C80600F0739C /* Vagus */,
+				EC3628551DC8C80600F0739C /* VagusTests */,
+				EC3628601DC8C80600F0739C /* VagusUITests */,
+				EC36283F1DC8C80600F0739C /* Products */,
+				8336F459E76E6B2F20AB96B0 /* Pods */,
+				1EC6574717807DF5A411CA1A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC36283F1DC8C80600F0739C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC36283E1DC8C80600F0739C /* Vagus.app */,
+				EC3628521DC8C80600F0739C /* VagusTests.xctest */,
+				EC36285D1DC8C80600F0739C /* VagusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC3628401DC8C80600F0739C /* Vagus */ = {
+			isa = PBXGroup;
+			children = (
+				EC3628411DC8C80600F0739C /* AppDelegate.swift */,
+				EC3628431DC8C80600F0739C /* ViewController.swift */,
+				EC3628451DC8C80600F0739C /* Main.storyboard */,
+				EC3628761DC8CFA600F0739C /* LoginViewController.swift */,
+				EC3628781DC8D19700F0739C /* SignUpViewController.swift */,
+				EC3628481DC8C80600F0739C /* Assets.xcassets */,
+				EC36284A1DC8C80600F0739C /* LaunchScreen.storyboard */,
+				EC36286F1DC8CA3C00F0739C /* Image */,
+				EC1BDC861DC9035F0025E648 /* GoogleService-Info.plist */,
+				EC36284D1DC8C80600F0739C /* Info.plist */,
+			);
+			path = Vagus;
+			sourceTree = "<group>";
+		};
+		EC3628551DC8C80600F0739C /* VagusTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC3628561DC8C80600F0739C /* VagusTests.swift */,
+				EC3628581DC8C80600F0739C /* Info.plist */,
+			);
+			path = VagusTests;
+			sourceTree = "<group>";
+		};
+		EC3628601DC8C80600F0739C /* VagusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC3628611DC8C80600F0739C /* VagusUITests.swift */,
+				EC3628631DC8C80600F0739C /* Info.plist */,
+			);
+			path = VagusUITests;
+			sourceTree = "<group>";
+		};
+		EC36286F1DC8CA3C00F0739C /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				EC3628701DC8CA3C00F0739C /* facebookLogo.png */,
+				EC3628711DC8CA3C00F0739C /* googleLogo.png */,
+				EC3628721DC8CA3C00F0739C /* twitterLogo.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC36283D1DC8C80600F0739C /* Vagus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC3628661DC8C80600F0739C /* Build configuration list for PBXNativeTarget "Vagus" */;
+			buildPhases = (
+				F01BECF9EFB76C9FCFC7BCF4 /* [CP] Check Pods Manifest.lock */,
+				EC36283A1DC8C80600F0739C /* Sources */,
+				EC36283B1DC8C80600F0739C /* Frameworks */,
+				EC36283C1DC8C80600F0739C /* Resources */,
+				3F43D0BD2BCD532D1EF20E57 /* [CP] Embed Pods Frameworks */,
+				4563DB92F143E5F04D6E9EA4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vagus;
+			productName = Vagus;
+			productReference = EC36283E1DC8C80600F0739C /* Vagus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC3628511DC8C80600F0739C /* VagusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC3628691DC8C80600F0739C /* Build configuration list for PBXNativeTarget "VagusTests" */;
+			buildPhases = (
+				017EE1A4A751DFEA51F593D6 /* [CP] Check Pods Manifest.lock */,
+				EC36284E1DC8C80600F0739C /* Sources */,
+				EC36284F1DC8C80600F0739C /* Frameworks */,
+				EC3628501DC8C80600F0739C /* Resources */,
+				66365A001F672687F812E718 /* [CP] Embed Pods Frameworks */,
+				151AE4138BFC08EC4BCF5943 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC3628541DC8C80600F0739C /* PBXTargetDependency */,
+			);
+			name = VagusTests;
+			productName = VagusTests;
+			productReference = EC3628521DC8C80600F0739C /* VagusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC36285C1DC8C80600F0739C /* VagusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC36286C1DC8C80600F0739C /* Build configuration list for PBXNativeTarget "VagusUITests" */;
+			buildPhases = (
+				4D2882647AEFF8307F5DD4C6 /* [CP] Check Pods Manifest.lock */,
+				EC3628591DC8C80600F0739C /* Sources */,
+				EC36285A1DC8C80600F0739C /* Frameworks */,
+				EC36285B1DC8C80600F0739C /* Resources */,
+				E0BAB3223955CD150B4DE13A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC36285F1DC8C80600F0739C /* PBXTargetDependency */,
+			);
+			name = VagusUITests;
+			productName = VagusUITests;
+			productReference = EC36285D1DC8C80600F0739C /* VagusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC3628361DC8C80600F0739C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "楊信之";
+				TargetAttributes = {
+					EC36283D1DC8C80600F0739C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3S72DANBXZ;
+						ProvisioningStyle = Automatic;
+					};
+					EC3628511DC8C80600F0739C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3S72DANBXZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC36283D1DC8C80600F0739C;
+					};
+					EC36285C1DC8C80600F0739C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3S72DANBXZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC36283D1DC8C80600F0739C;
+					};
+				};
+			};
+			buildConfigurationList = EC3628391DC8C80600F0739C /* Build configuration list for PBXProject "Vagus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC3628351DC8C80600F0739C;
+			productRefGroup = EC36283F1DC8C80600F0739C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC36283D1DC8C80600F0739C /* Vagus */,
+				EC3628511DC8C80600F0739C /* VagusTests */,
+				EC36285C1DC8C80600F0739C /* VagusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC36283C1DC8C80600F0739C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC36284C1DC8C80600F0739C /* LaunchScreen.storyboard in Resources */,
+				EC3628741DC8CA3C00F0739C /* googleLogo.png in Resources */,
+				EC3628751DC8CA3C00F0739C /* twitterLogo.png in Resources */,
+				EC3628491DC8C80600F0739C /* Assets.xcassets in Resources */,
+				EC3628731DC8CA3C00F0739C /* facebookLogo.png in Resources */,
+				EC3628471DC8C80600F0739C /* Main.storyboard in Resources */,
+				EC1BDC871DC9035F0025E648 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3628501DC8C80600F0739C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC36285B1DC8C80600F0739C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		017EE1A4A751DFEA51F593D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		151AE4138BFC08EC4BCF5943 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VagusTests/Pods-VagusTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F43D0BD2BCD532D1EF20E57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vagus/Pods-Vagus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4563DB92F143E5F04D6E9EA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vagus/Pods-Vagus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D2882647AEFF8307F5DD4C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		66365A001F672687F812E718 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VagusTests/Pods-VagusTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0BAB3223955CD150B4DE13A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VagusUITests/Pods-VagusUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F01BECF9EFB76C9FCFC7BCF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC36283A1DC8C80600F0739C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3628771DC8CFA600F0739C /* LoginViewController.swift in Sources */,
+				EC3628441DC8C80600F0739C /* ViewController.swift in Sources */,
+				EC3628791DC8D19700F0739C /* SignUpViewController.swift in Sources */,
+				EC3628421DC8C80600F0739C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC36284E1DC8C80600F0739C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3628571DC8C80600F0739C /* VagusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3628591DC8C80600F0739C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3628621DC8C80600F0739C /* VagusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC3628541DC8C80600F0739C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC36283D1DC8C80600F0739C /* Vagus */;
+			targetProxy = EC3628531DC8C80600F0739C /* PBXContainerItemProxy */;
+		};
+		EC36285F1DC8C80600F0739C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC36283D1DC8C80600F0739C /* Vagus */;
+			targetProxy = EC36285E1DC8C80600F0739C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC3628451DC8C80600F0739C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC3628461DC8C80600F0739C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC36284A1DC8C80600F0739C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC36284B1DC8C80600F0739C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC3628641DC8C80600F0739C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC3628651DC8C80600F0739C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC3628671DC8C80600F0739C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4CC4CACA02E143964537194 /* Pods-Vagus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3S72DANBXZ;
+				INFOPLIST_FILE = Vagus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XDEX.Vagus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EC3628681DC8C80600F0739C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB7B59036981D2938F9182B8 /* Pods-Vagus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3S72DANBXZ;
+				INFOPLIST_FILE = Vagus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XDEX.Vagus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EC36286A1DC8C80600F0739C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A96B0E1A19D24B8E2435B5F /* Pods-VagusTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3S72DANBXZ;
+				INFOPLIST_FILE = VagusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XDEX.VagusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vagus.app/Vagus";
+			};
+			name = Debug;
+		};
+		EC36286B1DC8C80600F0739C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8406BE248F755D9431229AD4 /* Pods-VagusTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3S72DANBXZ;
+				INFOPLIST_FILE = VagusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XDEX.VagusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vagus.app/Vagus";
+			};
+			name = Release;
+		};
+		EC36286D1DC8C80600F0739C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCEADAD07D1C0AC609EDFA59 /* Pods-VagusUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3S72DANBXZ;
+				INFOPLIST_FILE = VagusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XDEX.VagusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Vagus;
+			};
+			name = Debug;
+		};
+		EC36286E1DC8C80600F0739C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE4839BEFD3D0CAD1CAD01AA /* Pods-VagusUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3S72DANBXZ;
+				INFOPLIST_FILE = VagusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XDEX.VagusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Vagus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC3628391DC8C80600F0739C /* Build configuration list for PBXProject "Vagus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3628641DC8C80600F0739C /* Debug */,
+				EC3628651DC8C80600F0739C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC3628661DC8C80600F0739C /* Build configuration list for PBXNativeTarget "Vagus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3628671DC8C80600F0739C /* Debug */,
+				EC3628681DC8C80600F0739C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC3628691DC8C80600F0739C /* Build configuration list for PBXNativeTarget "VagusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC36286A1DC8C80600F0739C /* Debug */,
+				EC36286B1DC8C80600F0739C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC36286C1DC8C80600F0739C /* Build configuration list for PBXNativeTarget "VagusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC36286D1DC8C80600F0739C /* Debug */,
+				EC36286E1DC8C80600F0739C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC3628361DC8C80600F0739C /* Project object */;
+}

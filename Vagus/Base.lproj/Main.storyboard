@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="chV-V7-TVG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="VN8-t6-nyP">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HUh-xv-dtG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController navigationBarHidden="YES" id="chV-V7-TVG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jHG-Og-gOX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="odY-lm-8Dt"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-788" y="-226"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Vagus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRd-Lc-Sqy">
+                                <rect key="frame" x="84" y="413" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <segue destination="tvq-UH-p5P" kind="push" id="Zpb-6L-G1D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMt-HO-1Ue">
+                                <rect key="frame" x="259" y="413" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="hSd-ob-HN1" kind="push" id="HPd-4m-t6X"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googleLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z6E-mf-gMr">
+                                <rect key="frame" x="142" y="505" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="90G-hG-Y4C"/>
+                                    <constraint firstAttribute="height" constant="90" id="pyA-sn-4k9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitterLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="LC4-j0-TNT">
+                                <rect key="frame" x="269" y="505" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="7Bc-R6-ewV"/>
+                                    <constraint firstAttribute="height" constant="90" id="MZX-FB-gLH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebookLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="QgS-lY-6f3">
+                                <rect key="frame" x="16" y="505" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="9fb-0m-mRt"/>
+                                    <constraint firstAttribute="width" constant="90" id="bOM-lx-Gb3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QgS-lY-6f3" secondAttribute="bottom" constant="72" id="8JM-yc-RRF"/>
+                            <constraint firstItem="LC4-j0-TNT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9fg-Oz-31y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z6E-mf-gMr" secondAttribute="bottom" constant="72" id="QqY-Uq-8Zl"/>
+                            <constraint firstItem="LC4-j0-TNT" firstAttribute="leading" secondItem="Z6E-mf-gMr" secondAttribute="trailing" constant="37" id="TQp-LP-N1q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LC4-j0-TNT" secondAttribute="bottom" constant="72" id="aqV-uh-fLh"/>
+                            <constraint firstItem="QgS-lY-6f3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cnk-TD-JaJ"/>
+                            <constraint firstItem="Z6E-mf-gMr" firstAttribute="leading" secondItem="QgS-lY-6f3" secondAttribute="trailing" constant="36" id="q98-h9-73l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FOm-5m-uJp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.5999999999999996" y="-226.23688155922042"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="kGy-Um-Z6n">
+            <objects>
+                <viewController id="tvq-UH-p5P" customClass="SignUpViewController" customModule="Vagus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YM2-fp-wvb"/>
+                        <viewControllerLayoutGuide type="bottom" id="gNr-pR-9ly"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xVS-1G-ZpP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDK-S9-rgc">
+                                <rect key="frame" x="283" y="596" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.78517459198170991" blue="0.5105068327016079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xbs-qa-3Q6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UR0-5s-1qf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684" y="-226"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="QSt-82-fIy">
+            <objects>
+                <viewController id="hSd-ob-HN1" customClass="LoginViewController" customModule="Vagus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rfi-8U-YpU"/>
+                        <viewControllerLayoutGuide type="bottom" id="cG9-jl-nKo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dUa-Uw-5As">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.66838856977728889" green="1" blue="0.83265952226835571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3R2-PB-4bv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZTf-Vv-ArI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1374" y="-226"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebookLogo.png" width="512" height="512"/>
+        <image name="googleLogo.png" width="275" height="183"/>
+        <image name="twitterLogo.png" width="227" height="222"/>
+    </resources>
+</document>
