@@ -31,6 +31,18 @@ class SignUpViewController: UIViewController {
     }
 
     @IBAction func imagePickerAction(_ sender: Any) {
+        
+        let alertController = UIAlertController(title: "Upload Your Profile Image", message: nil, preferredStyle: .actionSheet)
+        let photoLibraryAction = UIAlertAction(title: "Upload From Photo Library", style: .default) { (action) in
+            // ...
+        }
+        let takePhotoAction = UIAlertAction(title: "Take A Photo", style: .default) { (action) in
+            // ...
+        }
+        alertController.addAction(photoLibraryAction)
+        alertController.addAction(takePhotoAction)
+        self.present(alertController, animated: true, completion: nil)
+
     }
 
     /*
