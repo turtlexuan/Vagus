@@ -10,6 +10,12 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var IDTextField: UITextField!
+    @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var postTextField: UITextField!
+    @IBOutlet weak var hobbyTextfield: UITextField!
+    @IBOutlet weak var specialityTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +27,11 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func nextVC(_ sender: Any) {
+    }
+
+    @IBAction func imagePickerAction(_ sender: Any) {
+    }
 
     /*
     // MARK: - Navigation
