@@ -270,7 +270,7 @@
 				TargetAttributes = {
 					EC36283D1DC8C80600F0739C = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 3S72DANBXZ;
+						DevelopmentTeam = T9G64ZZGC4;
 						ProvisioningStyle = Automatic;
 					};
 					EC3628511DC8C80600F0739C = {
@@ -623,7 +623,7 @@
 			baseConfigurationReference = B4CC4CACA02E143964537194 /* Pods-Vagus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3S72DANBXZ;
+				DEVELOPMENT_TEAM = T9G64ZZGC4;
 				INFOPLIST_FILE = Vagus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XDEX.Vagus;
@@ -637,7 +637,7 @@
 			baseConfigurationReference = EB7B59036981D2938F9182B8 /* Pods-Vagus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3S72DANBXZ;
+				DEVELOPMENT_TEAM = T9G64ZZGC4;
 				INFOPLIST_FILE = Vagus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XDEX.Vagus;

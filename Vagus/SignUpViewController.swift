@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import MobileCoreServices
+import Photos
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var IDTextField: UITextField!
@@ -17,6 +19,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var hobbyTextfield: UITextField!
     @IBOutlet weak var specialityTextField: UITextField!
 
+    let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,9 +42,21 @@ class SignUpViewController: UIViewController {
         let alertController = UIAlertController(title: "Upload Your Profile Image", message: nil, preferredStyle: .actionSheet)
         let photoLibraryAction = UIAlertAction(title: "Upload From Photo Library", style: .default) { (action) in
             // ...
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
+//                let imagePicker = UIImagePickerController()
+                self.imagePicker.sourceType = .photoLibrary
+                self.imagePicker.delegate = self
+                self.present(self.imagePicker, animated: true, completion: nil)
+            }
         }
         let takePhotoAction = UIAlertAction(title: "Take A Photo", style: .default) { (action) in
             // ...
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
+//                let imagePicker = UIImagePickerController()
+                self.imagePicker.sourceType = .camera
+                self.imagePicker.delegate = self
+                self.present(self.imagePicker, animated: true, completion: nil)
+            }
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
@@ -50,6 +65,22 @@ class SignUpViewController: UIViewController {
         alertController.addAction(cancelAction)
         self.present(alertController, animated: true, completion: nil)
 
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        //
+        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        if self.imagePicker.sourceType == .camera {
+            UIImageWriteToSavedPhotosAlbum(selectedImage, nil, nil, nil)
+        }
+        
+        profileImage.image = selectedImage
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     /*

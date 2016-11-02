@@ -108,7 +108,7 @@
                                     <action selector="nextVC:" destination="tvq-UH-p5P" eventType="touchUpInside" id="mzM-lb-Npe"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload.png" translatesAutoresizingMaskIntoConstraints="NO" id="j5c-92-i9e">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload.png" translatesAutoresizingMaskIntoConstraints="NO" id="j5c-92-i9e">
                                 <rect key="frame" x="37" y="107" width="300" height="200"/>
                                 <gestureRecognizers/>
                                 <constraints>
