@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -43,6 +42,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
+                                    <action selector="signUpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G9Y-Qh-IEv"/>
                                     <segue destination="tvq-UH-p5P" kind="push" id="Zpb-6L-G1D"/>
                                 </connections>
                             </button>
@@ -51,41 +51,36 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5I-EQ-pF9"/>
                                     <segue destination="hSd-ob-HN1" kind="push" id="HPd-4m-t6X"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googleLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z6E-mf-gMr">
-                                <rect key="frame" x="142" y="505" width="90" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="90G-hG-Y4C"/>
-                                    <constraint firstAttribute="height" constant="90" id="pyA-sn-4k9"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitterLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="LC4-j0-TNT">
-                                <rect key="frame" x="269" y="505" width="90" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="7Bc-R6-ewV"/>
-                                    <constraint firstAttribute="height" constant="90" id="MZX-FB-gLH"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebookLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="QgS-lY-6f3">
-                                <rect key="frame" x="16" y="505" width="90" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="9fb-0m-mRt"/>
-                                    <constraint firstAttribute="width" constant="90" id="bOM-lx-Gb3"/>
-                                </constraints>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiP-ns-Yoi">
+                                <rect key="frame" x="16" y="505" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="facebookLogo.png"/>
+                                <connections>
+                                    <action selector="facebookSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bn9-di-5jf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyA-g3-wnA">
+                                <rect key="frame" x="252" y="505" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="twitterLogo.png"/>
+                                <connections>
+                                    <action selector="twitterSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OgZ-1x-pEz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjz-8b-3c8">
+                                <rect key="frame" x="137" y="505" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="googleLogo.png"/>
+                                <connections>
+                                    <action selector="googleSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eU7-aG-S3c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QgS-lY-6f3" secondAttribute="bottom" constant="72" id="8JM-yc-RRF"/>
-                            <constraint firstItem="LC4-j0-TNT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9fg-Oz-31y"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z6E-mf-gMr" secondAttribute="bottom" constant="72" id="QqY-Uq-8Zl"/>
-                            <constraint firstItem="LC4-j0-TNT" firstAttribute="leading" secondItem="Z6E-mf-gMr" secondAttribute="trailing" constant="37" id="TQp-LP-N1q"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LC4-j0-TNT" secondAttribute="bottom" constant="72" id="aqV-uh-fLh"/>
-                            <constraint firstItem="QgS-lY-6f3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cnk-TD-JaJ"/>
-                            <constraint firstItem="Z6E-mf-gMr" firstAttribute="leading" secondItem="QgS-lY-6f3" secondAttribute="trailing" constant="36" id="q98-h9-73l"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FOm-5m-uJp"/>
                 </viewController>

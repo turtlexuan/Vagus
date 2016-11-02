@@ -20,7 +20,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func signUpAction(_ sender: Any) {
+    }
+
+    @IBAction func loginAction(_ sender: Any) {
+    }
     
+    @IBAction func facebookSignUp(_ sender: Any) {
+    }
     
+    @IBAction func googleSignUp(_ sender: Any) {
+    }
+
+    @IBAction func twitterSignUp(_ sender: Any) {
+    }
 }
 
