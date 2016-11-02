@@ -16,10 +16,15 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var postTextField: UITextField!
     @IBOutlet weak var hobbyTextfield: UITextField!
     @IBOutlet weak var specialityTextField: UITextField!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        profileImage.isUserInteractionEnabled = true
+        profileImage.addGestureRecognizer(tapGestureRecognizer)
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,8 +35,7 @@ class SignUpViewController: UIViewController {
     @IBAction func nextVC(_ sender: Any) {
     }
 
-    @IBAction func imagePickerAction(_ sender: Any) {
-        
+    func imageTapped(img: AnyObject) {
         let alertController = UIAlertController(title: "Upload Your Profile Image", message: nil, preferredStyle: .actionSheet)
         let photoLibraryAction = UIAlertAction(title: "Upload From Photo Library", style: .default) { (action) in
             // ...
@@ -39,12 +43,15 @@ class SignUpViewController: UIViewController {
         let takePhotoAction = UIAlertAction(title: "Take A Photo", style: .default) { (action) in
             // ...
         }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
         alertController.addAction(photoLibraryAction)
         alertController.addAction(takePhotoAction)
+        alertController.addAction(cancelAction)
         self.present(alertController, animated: true, completion: nil)
 
     }
-
+    
     /*
     // MARK: - Navigation
 
