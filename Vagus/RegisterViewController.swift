@@ -59,37 +59,7 @@ class RegisterViewController: UIViewController {
         
     }
     
-    @IBAction func cancelAction(_ sender: Any) {
-        
-        DispatchQueue.global().async {
-            
-            DispatchQueue.main.async {
-                self.navigationController?.popViewController(animated: true)
-            }
-        }
-    
-    }
     
     
-    func signup() {
-        
-        FIRAuth.auth()?.createUser(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
-            
-            if error != nil {
-                
-//                self.login()
-                
-            } else {
-                
-                print( "User Created" )
-                
-//                self.login()
-            }
-            
-        })
-
-        
-    }
     
-
 }

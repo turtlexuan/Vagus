@@ -10,6 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    // MARK: - IBOutlet
     @IBOutlet weak var userProfileImage     : UIImageView!
     @IBOutlet weak var userID               : UILabel!
     @IBOutlet weak var userAge              : UILabel!
@@ -18,6 +19,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var userLevel            : UILabel!
     @IBOutlet weak var levelImage           : UIImageView!
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,12 +31,11 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - IBAction
     @IBAction func goChatAction(_ sender: Any) {
     }
 
-    @IBAction func goFriendManagerAction(_ sender: Any) {
-    }
-
+    
     @IBAction func nextVC(_ sender: Any) {
     }
     /*

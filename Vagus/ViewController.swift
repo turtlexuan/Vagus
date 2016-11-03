@@ -11,36 +11,23 @@ import Firebase
 
 class ViewController: UIViewController {
 
+    // MARK: - IBOutlet
     @IBOutlet weak var emailTextField       : UITextField!
     @IBOutlet weak var passwordTextField    : UITextField!
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-//        FIRAuth.auth()?.createUser(withEmail: "rc840327@gmail.com", password: "A1ed4531drg", completion: { (user, error) in
-//            //
-//            print(">>>")
-//            if error != nil {
-//                print(error)
-//                return
-//            }
-//            print("!!!!!!!")
-//            print(user)
-//        })
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
-    @IBAction func signUpAction(_ sender: Any) {
-        
-        
-        
-    }
-
+    // MARK: - IBAction
     @IBAction func loginAction(_ sender: Any) {
         
         FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion:  { (user, error) in
@@ -52,7 +39,13 @@ class ViewController: UIViewController {
                 
             } else {
                 // Go to Main Page.
-                print("!!")
+                DispatchQueue.global().async {
+                    
+                    DispatchQueue.main.async {
+                        let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+                        self.navigationController?.pushViewController(mainVC, animated: true)
+                    }
+                }
             }
         })
         

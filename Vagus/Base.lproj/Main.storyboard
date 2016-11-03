@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="chV-V7-TVG">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="chV-V7-TVG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -47,7 +47,6 @@
                                 </constraints>
                                 <state key="normal" title="No Account?  Sign Up"/>
                                 <connections>
-                                    <action selector="signUpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G9Y-Qh-IEv"/>
                                     <segue destination="bOK-HH-SxU" kind="show" id="hHY-2G-Jua"/>
                                 </connections>
                             </button>
@@ -232,6 +231,9 @@
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="bOK-HH-SxU" kind="show" id="uiu-ZO-QLH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GH7-eU-0eq">
                                         <rect key="frame" x="160" y="0.0" width="150" height="40"/>
@@ -438,7 +440,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="cancelAction:" destination="bOK-HH-SxU" eventType="touchUpInside" id="Ddo-G6-bAs"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="wgL-XF-Jjk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxj-gR-SVO">
@@ -863,7 +865,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="goFriendManagerAction:" destination="qDw-IX-O2T" eventType="touchUpInside" id="Vky-hZ-GDH"/>
+                                    <segue destination="Kz3-Tu-IED" kind="show" id="0hD-Fr-ODO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0e-99-Jmk">
@@ -875,7 +877,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="nextVC:" destination="qDw-IX-O2T" eventType="touchUpInside" id="ryJ-S0-nck"/>
+                                    <action selector="nextVC:" destination="qDw-IX-O2T" eventType="touchUpInside" id="Cao-NX-LJ0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJ3-ff-lj3">
@@ -923,7 +925,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SVM-bP-srE">
-                                <rect key="frame" x="87.5" y="254" width="200" height="200"/>
+                                <rect key="frame" x="88" y="254" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="3gs-vP-KAE"/>
                                     <constraint firstAttribute="height" constant="200" id="zGi-jL-mxh"/>
@@ -1065,6 +1067,15 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NY-TY-sK1">
+                                <rect key="frame" x="10" y="600" width="46" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.38086708600460073" green="0.88583171861216037" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="qDw-IX-O2T" kind="show" id="3pM-eL-lM8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1092,4 +1103,8 @@
         <image name="主頁.png" width="371" height="633"/>
         <image name="朋友版.png" width="362" height="644"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uiu-ZO-QLH"/>
+        <segue reference="wgL-XF-Jjk"/>
+    </inferredMetricsTieBreakers>
 </document>
