@@ -28,7 +28,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Vagus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Vagus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -197,7 +197,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="kGy-Um-Z6n">
             <objects>
-                <viewController id="tvq-UH-p5P" customClass="SignUpViewController" customModule="Vagus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tvq-UH-p5P" customClass="SignUpViewController" customModule="Vagus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YM2-fp-wvb"/>
                         <viewControllerLayoutGuide type="bottom" id="gNr-pR-9ly"/>
@@ -241,6 +241,9 @@
                                         <state key="normal" title="Continue">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="continueAction:" destination="tvq-UH-p5P" eventType="touchUpInside" id="Sqf-Sn-olw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -399,14 +402,18 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UR0-5s-1qf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="1PK-Jb-BkP"/>
+                <tapGestureRecognizer id="1PK-Jb-BkP">
+                    <connections>
+                        <action selector="tapAction:" destination="tvq-UH-p5P" id="3Vf-nX-gg9"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1455" y="-226"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="fmk-iu-zFR">
             <objects>
-                <viewController id="bOK-HH-SxU" customClass="RegisterViewController" customModule="Vagus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bOK-HH-SxU" customClass="RegisterViewController" customModule="Vagus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fbq-NY-alE"/>
                         <viewControllerLayoutGuide type="bottom" id="KOz-JW-mx8"/>
@@ -753,9 +760,6 @@
                                     <state key="normal" title="Cancel">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
-                                    <connections>
-                                        <action selector="nextVC:" destination="tvq-UH-p5P" eventType="touchUpInside" id="WRk-fX-PbC"/>
-                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zl-TO-4mY">
                                     <rect key="frame" x="160" y="0.0" width="150" height="40"/>
@@ -767,9 +771,6 @@
                                     <state key="normal" title="Continue">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
-                                    <connections>
-                                        <action selector="nextVC:" destination="tvq-UH-p5P" eventType="touchUpInside" id="rZq-iM-5PD"/>
-                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
@@ -800,7 +801,7 @@
         <!--Login View Controller-->
         <scene sceneID="QSt-82-fIy">
             <objects>
-                <viewController id="hSd-ob-HN1" customClass="LoginViewController" customModule="Vagus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hSd-ob-HN1" customClass="LoginViewController" customModule="Vagus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rfi-8U-YpU"/>
                         <viewControllerLayoutGuide type="bottom" id="cG9-jl-nKo"/>

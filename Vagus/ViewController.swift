@@ -17,6 +17,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+//        FIRAuth.auth()?.createUser(withEmail: "rc840327@gmail.com", password: "A1ed4531drg", completion: { (user, error) in
+//            //
+//            print(">>>")
+//            if error != nil {
+//                print(error)
+//                return
+//            }
+//            print("!!!!!!!")
+//            print(user)
+//        })
     }
 
     override func didReceiveMemoryWarning() {

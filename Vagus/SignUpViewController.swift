@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import MobileCoreServices
+
 import Photos
-import FirebaseDatabase
+import Firebase
 
 class SignUpViewController: UIViewController, UINavigationControllerDelegate {
 
@@ -32,10 +32,8 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
-        profileImage.isUserInteractionEnabled = true
-        profileImage.addGestureRecognizer(tapGestureRecognizer)
         
+        print("!!")
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,15 +41,73 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    // MARK: - IBAction
-    @IBAction func nextVC(_ sender: Any) {
-        
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("@#")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated
+        )
         
     }
+    
+    // MARK: - IBAction
+    @IBAction func continueAction(_ sender: Any) {
+        
+        if self.email == "" && self.password == "" {
+            print("no email and password")
+            return
+        }
+        
+        let userHandler = UserHangler.sharedInstance
+        
+        // TODO: - May be error
+        let user = User(_age: Int(ageTextField.text!)! ,
+                        _id: IDTextField.text!,
+                        _post: postTextField.text!,
+                        _hobby: hobbyTextfield.text!,
+                        _speciality: specialityTextField.text!)
+        userHandler.addUser(user: user)
+        
+        let auth = FIRAuth.auth()
+        auth?.createUser(withEmail: self.email, password: self.password, completion: { (user, error) in
+            //
+            if error != nil {
+                print("!!!!")
+                print(error!)
+                return
+            }
+            
+            auth?.signIn(withEmail: self.email, password: self.password, completion: { (user, error) in
+                            //
+                if error != nil {
+                    print(">>>>")
+                    print(error!)
+                    return
+                }
+            
+                DispatchQueue.global().async {
+                    
+                    DispatchQueue.main.async {
+                        self.navigationController?.popToRootViewController(animated: true)
+                    }
+                }
+            
+            })
+            
+        })
+    }
+    
 
+    
+    @IBAction func tapAction(_ sender: Any) {
+        print("haha")
+        imageTapped()
+    }
+    
     // MARK: - Function
-    func imageTapped(img: AnyObject) {
+    func imageTapped() {
         let alertController = UIAlertController(title: "Upload Your Profile Image", message: nil, preferredStyle: .actionSheet)
         
         let photoLibraryAction = UIAlertAction(title: "Upload From Photo Library", style: .default) { (action) in
@@ -98,7 +154,7 @@ extension SignUpViewController : UIImagePickerControllerDelegate {
             UIImageWriteToSavedPhotosAlbum(selectedImage, nil, nil, nil)
         }
         
-        profileImage.image = selectedImage
+        profileImage!.image = selectedImage
         self.dismiss(animated: true, completion: nil)
     }
     

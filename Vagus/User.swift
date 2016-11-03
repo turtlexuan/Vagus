@@ -11,12 +11,12 @@ import UIKit
 class User: NSObject {
 
     let age : Int
-    let id : Int
+    let id : String
     let post : String
     let hobby : String
     let speciality : String
     
-    init(_age : Int, _id : Int, _post : String, _hobby : String, _speciality : String) {
+    init(_age : Int, _id : String, _post : String, _hobby : String, _speciality : String) {
         age = _age
         id = _id
         post = _post

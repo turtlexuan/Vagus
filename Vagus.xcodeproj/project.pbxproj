@@ -26,6 +26,7 @@
 		EC3628771DC8CFA600F0739C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3628761DC8CFA600F0739C /* LoginViewController.swift */; };
 		EC3628791DC8D19700F0739C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3628781DC8D19700F0739C /* SignUpViewController.swift */; };
 		EC740CF11DCB75EB0084010E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC740CF01DCB75EB0084010E /* User.swift */; };
+		EC740CF31DCB7EFC0084010E /* UserHangler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC740CF21DCB7EFC0084010E /* UserHangler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		EC3628761DC8CFA600F0739C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EC3628781DC8D19700F0739C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EC740CF01DCB75EB0084010E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EC740CF21DCB7EFC0084010E /* UserHangler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHangler.swift; sourceTree = "<group>"; };
 		EE4839BEFD3D0CAD1CAD01AA /* Pods-VagusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VagusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VagusUITests/Pods-VagusUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +160,7 @@
 				EC3628411DC8C80600F0739C /* AppDelegate.swift */,
 				EC3628431DC8C80600F0739C /* ViewController.swift */,
 				EC740CF01DCB75EB0084010E /* User.swift */,
+				EC740CF21DCB7EFC0084010E /* UserHangler.swift */,
 				EC3628451DC8C80600F0739C /* Main.storyboard */,
 				EC3628761DC8CFA600F0739C /* LoginViewController.swift */,
 				EC3628781DC8D19700F0739C /* SignUpViewController.swift */,
@@ -479,6 +482,7 @@
 				EC3628441DC8C80600F0739C /* ViewController.swift in Sources */,
 				EC3628791DC8D19700F0739C /* SignUpViewController.swift in Sources */,
 				EC3628421DC8C80600F0739C /* AppDelegate.swift in Sources */,
+				EC740CF31DCB7EFC0084010E /* UserHangler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

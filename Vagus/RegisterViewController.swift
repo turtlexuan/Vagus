@@ -33,7 +33,7 @@ class RegisterViewController: UIViewController {
     // MARK: - IBAction
     @IBAction func continueAction(_ sender: Any) {
         
-        let SUVC = SignUpViewController()
+        let SUVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
         
         guard let _email = self.emailTextField.text else {
             print("email is nil")
@@ -47,6 +47,7 @@ class RegisterViewController: UIViewController {
         
         SUVC.email      = _email
         SUVC.password   = _password
+        
         
         DispatchQueue.global().async {
             
