@@ -23,7 +23,7 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
 
     // MARK: - Variable
     let imagePicker = UIImagePickerController()
-    let users
+
     var email       : String = ""
     var password    : String = ""
     
@@ -35,6 +35,7 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         profileImage.isUserInteractionEnabled = true
         profileImage.addGestureRecognizer(tapGestureRecognizer)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,6 +45,7 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
     
     // MARK: - IBAction
     @IBAction func nextVC(_ sender: Any) {
+        
         
         
     }
