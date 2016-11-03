@@ -10,6 +10,9 @@
 		042A52441DC9E7B10009EAB5 /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = 042A52431DC9E7B10009EAB5 /* upload.png */; };
 		04944A5A1DCB9C7C005337ED /* 主頁.png in Resources */ = {isa = PBXBuildFile; fileRef = 04944A591DCB9C7C005337ED /* 主頁.png */; };
 		04944A5C1DCB9F26005337ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04944A5B1DCB9F26005337ED /* MainViewController.swift */; };
+		04944A5E1DCBA279005337ED /* 朋友版.png in Resources */ = {isa = PBXBuildFile; fileRef = 04944A5D1DCBA279005337ED /* 朋友版.png */; };
+		04944A601DCBA4A8005337ED /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04944A5F1DCBA4A8005337ED /* FriendViewController.swift */; };
+		04944A621DCBA511005337ED /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04944A611DCBA511005337ED /* FriendTableViewCell.swift */; };
 		04BCEED61DCB3C7500ED8247 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCEED51DCB3C7500ED8247 /* RegisterViewController.swift */; };
 		3837AB2CCDD3C495301EFEDA /* Pods_Vagus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C097FB271229862D5D14D35 /* Pods_Vagus.framework */; };
 		4B618D6E0CFF49FD0B1F9E0B /* Pods_VagusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF956710AFD64212AB56678 /* Pods_VagusUITests.framework */; };
@@ -52,6 +55,9 @@
 		042A52431DC9E7B10009EAB5 /* upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upload.png; sourceTree = "<group>"; };
 		04944A591DCB9C7C005337ED /* 主頁.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主頁.png"; sourceTree = "<group>"; };
 		04944A5B1DCB9F26005337ED /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		04944A5D1DCBA279005337ED /* 朋友版.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "朋友版.png"; sourceTree = "<group>"; };
+		04944A5F1DCBA4A8005337ED /* FriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		04944A611DCBA511005337ED /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		04BCEED51DCB3C7500ED8247 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3AF956710AFD64212AB56678 /* Pods_VagusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VagusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C097FB271229862D5D14D35 /* Pods_Vagus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vagus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +176,8 @@
 				EC3628781DC8D19700F0739C /* SignUpViewController.swift */,
 				04BCEED51DCB3C7500ED8247 /* RegisterViewController.swift */,
 				04944A5B1DCB9F26005337ED /* MainViewController.swift */,
+				04944A5F1DCBA4A8005337ED /* FriendViewController.swift */,
+				04944A611DCBA511005337ED /* FriendTableViewCell.swift */,
 				EC3628481DC8C80600F0739C /* Assets.xcassets */,
 				EC36284A1DC8C80600F0739C /* LaunchScreen.storyboard */,
 				EC36286F1DC8CA3C00F0739C /* Image */,
@@ -200,6 +208,7 @@
 		EC36286F1DC8CA3C00F0739C /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				04944A5D1DCBA279005337ED /* 朋友版.png */,
 				04944A591DCB9C7C005337ED /* 主頁.png */,
 				EC3628701DC8CA3C00F0739C /* facebookLogo.png */,
 				EC3628711DC8CA3C00F0739C /* googleLogo.png */,
@@ -331,6 +340,7 @@
 				EC3628741DC8CA3C00F0739C /* googleLogo.png in Resources */,
 				042A52441DC9E7B10009EAB5 /* upload.png in Resources */,
 				EC3628751DC8CA3C00F0739C /* twitterLogo.png in Resources */,
+				04944A5E1DCBA279005337ED /* 朋友版.png in Resources */,
 				EC3628491DC8C80600F0739C /* Assets.xcassets in Resources */,
 				EC3628731DC8CA3C00F0739C /* facebookLogo.png in Resources */,
 				EC3628471DC8C80600F0739C /* Main.storyboard in Resources */,
@@ -489,6 +499,8 @@
 				EC3628441DC8C80600F0739C /* ViewController.swift in Sources */,
 				EC3628791DC8D19700F0739C /* SignUpViewController.swift in Sources */,
 				EC3628421DC8C80600F0739C /* AppDelegate.swift in Sources */,
+				04944A601DCBA4A8005337ED /* FriendViewController.swift in Sources */,
+				04944A621DCBA511005337ED /* FriendTableViewCell.swift in Sources */,
 				EC740CF31DCB7EFC0084010E /* UserHangler.swift in Sources */,
 				04944A5C1DCB9F26005337ED /* MainViewController.swift in Sources */,
 			);
