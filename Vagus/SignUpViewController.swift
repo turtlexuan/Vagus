@@ -12,12 +12,15 @@ import Photos
 
 class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    @IBOutlet weak var profileImage: UIImageView!
-    @IBOutlet weak var IDTextField: UITextField!
-    @IBOutlet weak var ageTextField: UITextField!
-    @IBOutlet weak var postTextField: UITextField!
-    @IBOutlet weak var hobbyTextfield: UITextField!
-    @IBOutlet weak var specialityTextField: UITextField!
+    @IBOutlet weak var profileImage         : UIImageView!
+    @IBOutlet weak var IDTextField          : UITextField!
+    @IBOutlet weak var ageTextField         : UITextField!
+    @IBOutlet weak var postTextField        : UITextField!
+    @IBOutlet weak var hobbyTextfield       : UITextField!
+    @IBOutlet weak var specialityTextField  : UITextField!
+    
+    public var userEmail : NSString!
+    
 
     let imagePicker = UIImagePickerController()
     
@@ -36,28 +39,30 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     @IBAction func nextVC(_ sender: Any) {
+        
     }
 
     func imageTapped(img: AnyObject) {
         let alertController = UIAlertController(title: "Upload Your Profile Image", message: nil, preferredStyle: .actionSheet)
+        
         let photoLibraryAction = UIAlertAction(title: "Upload From Photo Library", style: .default) { (action) in
             // ...
             if UIImagePickerController.isSourceTypeAvailable(.camera) {
-//                let imagePicker = UIImagePickerController()
-                self.imagePicker.sourceType = .photoLibrary
-                self.imagePicker.delegate = self
+                self.imagePicker.sourceType     = .photoLibrary
+                self.imagePicker.delegate       = self
                 self.present(self.imagePicker, animated: true, completion: nil)
             }
         }
+        
         let takePhotoAction = UIAlertAction(title: "Take A Photo", style: .default) { (action) in
             // ...
             if UIImagePickerController.isSourceTypeAvailable(.camera) {
-//                let imagePicker = UIImagePickerController()
-                self.imagePicker.sourceType = .camera
-                self.imagePicker.delegate = self
+                self.imagePicker.sourceType     = .camera
+                self.imagePicker.delegate       = self
                 self.present(self.imagePicker, animated: true, completion: nil)
             }
         }
+        
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
         alertController.addAction(photoLibraryAction)

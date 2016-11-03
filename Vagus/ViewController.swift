@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField       : UITextField!
+    @IBOutlet weak var passwordTextField    : UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,9 +25,26 @@ class ViewController: UIViewController {
     }
 
     @IBAction func signUpAction(_ sender: Any) {
+        
+        
+        
     }
 
     @IBAction func loginAction(_ sender: Any) {
+        
+        FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion:  { (user, error) in
+            
+            if (error != nil) {
+                // Show Error Alert
+                
+                print("Incorrect")
+                
+            } else {
+                // Go to Main Page.
+                print("!!")
+            }
+        })
+        
     }
     
     @IBAction func facebookSignUp(_ sender: Any) {

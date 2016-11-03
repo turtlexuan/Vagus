@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		042A52441DC9E7B10009EAB5 /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = 042A52431DC9E7B10009EAB5 /* upload.png */; };
+		04BCEED61DCB3C7500ED8247 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCEED51DCB3C7500ED8247 /* RegisterViewController.swift */; };
 		3837AB2CCDD3C495301EFEDA /* Pods_Vagus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C097FB271229862D5D14D35 /* Pods_Vagus.framework */; };
 		4B618D6E0CFF49FD0B1F9E0B /* Pods_VagusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF956710AFD64212AB56678 /* Pods_VagusUITests.framework */; };
 		5B99E3F9DFAAF9C775A53DFB /* Pods_VagusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E4D3A1F763DA910381CE3C /* Pods_VagusTests.framework */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		042A52431DC9E7B10009EAB5 /* upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upload.png; sourceTree = "<group>"; };
+		04BCEED51DCB3C7500ED8247 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3AF956710AFD64212AB56678 /* Pods_VagusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VagusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C097FB271229862D5D14D35 /* Pods_Vagus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vagus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A96B0E1A19D24B8E2435B5F /* Pods-VagusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VagusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VagusTests/Pods-VagusTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				EC3628451DC8C80600F0739C /* Main.storyboard */,
 				EC3628761DC8CFA600F0739C /* LoginViewController.swift */,
 				EC3628781DC8D19700F0739C /* SignUpViewController.swift */,
+				04BCEED51DCB3C7500ED8247 /* RegisterViewController.swift */,
 				EC3628481DC8C80600F0739C /* Assets.xcassets */,
 				EC36284A1DC8C80600F0739C /* LaunchScreen.storyboard */,
 				EC36286F1DC8CA3C00F0739C /* Image */,
@@ -468,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC3628771DC8CFA600F0739C /* LoginViewController.swift in Sources */,
+				04BCEED61DCB3C7500ED8247 /* RegisterViewController.swift in Sources */,
 				EC3628441DC8C80600F0739C /* ViewController.swift in Sources */,
 				EC3628791DC8D19700F0739C /* SignUpViewController.swift in Sources */,
 				EC3628421DC8C80600F0739C /* AppDelegate.swift in Sources */,
