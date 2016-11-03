@@ -10,8 +10,9 @@ import UIKit
 import MobileCoreServices
 import Photos
 
-class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SignUpViewController: UIViewController, UINavigationControllerDelegate {
 
+    // MARK: - IBOutlet
     @IBOutlet weak var profileImage         : UIImageView!
     @IBOutlet weak var IDTextField          : UITextField!
     @IBOutlet weak var ageTextField         : UITextField!
@@ -24,6 +25,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
 
     let imagePicker = UIImagePickerController()
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,10 +40,12 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - IBAction
     @IBAction func nextVC(_ sender: Any) {
         
     }
 
+    // MARK: - Function
     func imageTapped(img: AnyObject) {
         let alertController = UIAlertController(title: "Upload Your Profile Image", message: nil, preferredStyle: .actionSheet)
         
@@ -72,6 +76,15 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
 
     }
     
+    
+    
+    
+
+}
+
+// MARK: - UIImagePickerControllerDelegate
+extension SignUpViewController : UIImagePickerControllerDelegate {
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         //
         let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
@@ -88,14 +101,4 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.dismiss(animated: true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
