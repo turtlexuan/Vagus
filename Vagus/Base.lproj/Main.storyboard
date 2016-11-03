@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="chV-V7-TVG">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="chV-V7-TVG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -74,7 +74,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vagus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chI-ER-Jqw">
-                                <rect key="frame" x="87" y="36" width="200" height="100"/>
+                                <rect key="frame" x="88" y="36" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="kAH-IX-QSj"/>
                                     <constraint firstAttribute="height" constant="100" id="pr0-Cm-UKH"/>
@@ -84,7 +84,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2Ri-BG-O2b">
-                                <rect key="frame" x="57" y="204" width="260" height="80"/>
+                                <rect key="frame" x="58" y="204" width="260" height="80"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HKQ-4d-F9d">
                                         <rect key="frame" x="0.0" y="0.0" width="260" height="30"/>
@@ -141,7 +141,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iRN-xI-NPr">
-                                <rect key="frame" x="42" y="318" width="290" height="30"/>
+                                <rect key="frame" x="43" y="318" width="290" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMt-HO-1Ue">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
@@ -207,7 +207,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload.png" translatesAutoresizingMaskIntoConstraints="NO" id="j5c-92-i9e">
-                                <rect key="frame" x="37" y="40" width="300" height="200"/>
+                                <rect key="frame" x="38" y="40" width="300" height="200"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="1Pp-q8-82L"/>
@@ -230,9 +230,6 @@
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="nextVC:" destination="tvq-UH-p5P" eventType="touchUpInside" id="mzM-lb-Npe"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GH7-eU-0eq">
                                         <rect key="frame" x="160" y="0.0" width="150" height="40"/>
@@ -244,9 +241,6 @@
                                         <state key="normal" title="Continue">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="nextVC:" destination="tvq-UH-p5P" eventType="touchUpInside" id="Oxt-MV-XrJ"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -422,7 +416,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bOx-VZ-4Ju">
-                                <rect key="frame" x="32" y="260" width="310" height="40"/>
+                                <rect key="frame" x="33" y="260" width="310" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzL-VB-7RI">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
@@ -435,8 +429,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="cancelAction:" destination="bOK-HH-SxU" eventType="touchUpInside" id="P9w-tv-xRc"/>
-                                            <action selector="nextVC:" destination="tvq-UH-p5P" eventType="touchUpInside" id="kdi-sq-lmA"/>
+                                            <action selector="cancelAction:" destination="bOK-HH-SxU" eventType="touchUpInside" id="Ddo-G6-bAs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxj-gR-SVO">
@@ -450,9 +443,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="continueAction:" destination="bOK-HH-SxU" eventType="touchUpInside" id="eTd-Ai-PQj"/>
-                                            <action selector="nextVC:" destination="tvq-UH-p5P" eventType="touchUpInside" id="tnZ-NU-2dV"/>
-                                            <segue destination="tvq-UH-p5P" kind="show" id="kyH-WE-QQf"/>
+                                            <action selector="continueAction:" destination="bOK-HH-SxU" eventType="touchUpInside" id="hKN-ov-264"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -462,7 +453,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="vuG-c4-qG4">
-                                <rect key="frame" x="52" y="110" width="270" height="90"/>
+                                <rect key="frame" x="53" y="110" width="270" height="90"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qYi-qL-nSN">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="30"/>
@@ -519,7 +510,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Cb-H4-ntR">
-                                <rect key="frame" x="87" y="40" width="200" height="40"/>
+                                <rect key="frame" x="88" y="40" width="200" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="mpj-C3-6Xv"/>
                                     <constraint firstAttribute="width" constant="200" id="x10-Am-i9C"/>

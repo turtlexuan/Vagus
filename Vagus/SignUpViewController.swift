@@ -9,6 +9,7 @@
 import UIKit
 import MobileCoreServices
 import Photos
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController, UINavigationControllerDelegate {
 
@@ -19,11 +20,12 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var postTextField        : UITextField!
     @IBOutlet weak var hobbyTextfield       : UITextField!
     @IBOutlet weak var specialityTextField  : UITextField!
-    
-    public var userEmail : NSString!
-    
 
+    // MARK: - Variable
     let imagePicker = UIImagePickerController()
+    let users
+    var email       : String = ""
+    var password    : String = ""
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -42,6 +44,7 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
     
     // MARK: - IBAction
     @IBAction func nextVC(_ sender: Any) {
+        
         
     }
 

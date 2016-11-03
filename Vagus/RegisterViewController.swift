@@ -11,12 +11,11 @@ import Firebase
 
 class RegisterViewController: UIViewController {
 
+    // MARK: - IBOutlet
     @IBOutlet weak var emailTextField       : UITextField!
     @IBOutlet weak var passwordTextField    : UITextField!
     
-    public var userEmail : NSString!
-    var SUVC = SignUpViewController()
-    
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,17 +29,46 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    // MARK: - IBAction
     @IBAction func continueAction(_ sender: Any) {
         
-        SUVC.userEmail = self.emailTextField.text! as NSString!
+        let SUVC = SignUpViewController()
         
-//        let SUVC = SignUpViewController()
-//        self.present(SUVC, animated: true, completion: nil)
+        guard let _email = self.emailTextField.text else {
+            print("email is nil")
+            return
+        }
+        
+        guard let _password = self.passwordTextField.text else {
+            print("password is nil")
+            return
+        }
+        
+        SUVC.email      = _email
+        SUVC.password   = _password
+        
+        DispatchQueue.global().async {
+            
+            DispatchQueue.main.async {
+                self.navigationController?.pushViewController(SUVC, animated: true)
+            }
+        }
+        
         
     }
-
+    
     @IBAction func cancelAction(_ sender: Any) {
+        
+        DispatchQueue.global().async {
+            
+            DispatchQueue.main.async {
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
+    
     }
+    
     
     func signup() {
         
@@ -62,14 +90,5 @@ class RegisterViewController: UIViewController {
         
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
