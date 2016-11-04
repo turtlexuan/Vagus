@@ -24,6 +24,7 @@
 		EC3628751DC8CA3C00F0739C /* twitterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3628721DC8CA3C00F0739C /* twitterLogo.png */; };
 		EC6047D01DCC27E0008FB920 /* UserHangler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6047CF1DCC27E0008FB920 /* UserHangler.swift */; };
 		EC6047D21DCC28F7008FB920 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6047D11DCC28F7008FB920 /* MapViewController.swift */; };
+		ECA15CDB1DCC338800A387D9 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA15CDA1DCC338800A387D9 /* LocationManager.swift */; };
 		ECFC65221DCC27830083BB08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFC65091DCC27830083BB08 /* LaunchScreen.storyboard */; };
 		ECFC65231DCC27830083BB08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFC650B1DCC27830083BB08 /* Main.storyboard */; };
 		ECFC65241DCC27830083BB08 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC650E1DCC27830083BB08 /* FriendViewController.swift */; };
@@ -89,6 +90,7 @@
 		EC3628721DC8CA3C00F0739C /* twitterLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterLogo.png; sourceTree = "<group>"; };
 		EC6047CF1DCC27E0008FB920 /* UserHangler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHangler.swift; sourceTree = "<group>"; };
 		EC6047D11DCC28F7008FB920 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		ECA15CDA1DCC338800A387D9 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		ECFC650A1DCC27830083BB08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECFC650C1DCC27830083BB08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		ECFC650E1DCC27830083BB08 /* FriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				EC6047CF1DCC27E0008FB920 /* UserHangler.swift */,
+				ECA15CDA1DCC338800A387D9 /* LocationManager.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				EC6047D01DCC27E0008FB920 /* UserHangler.swift in Sources */,
 				ECFC65241DCC27830083BB08 /* FriendViewController.swift in Sources */,
 				ECFC65271DCC27830083BB08 /* RegisterViewController.swift in Sources */,
+				ECA15CDB1DCC338800A387D9 /* LocationManager.swift in Sources */,
 				ECFC65331DCC27830083BB08 /* FriendTableViewCell.swift in Sources */,
 				ECFC65281DCC27830083BB08 /* SignUpViewController.swift in Sources */,
 				ECFC65301DCC27830083BB08 /* User.swift in Sources */,

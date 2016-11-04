@@ -52,5 +52,9 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>After you allow, you can start use GPS location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>After you allow, you can start use GPS location</string>
 </dict>
 </plist>

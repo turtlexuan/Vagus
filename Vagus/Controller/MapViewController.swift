@@ -9,11 +9,14 @@
 import UIKit
 
 class MapViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let locationMG = LocationManager.sharedInstance
+        locationMG.requestAlwaysInUse()
+        locationMG.start()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +24,11 @@ class MapViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func action(_ sender: Any) {
+        
+        let locationMG = LocationManager.sharedInstance
+        
+    }
 
     
 
