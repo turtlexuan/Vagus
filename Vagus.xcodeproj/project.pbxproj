@@ -9,17 +9,11 @@
 /* Begin PBXBuildFile section */
 		042A52441DC9E7B10009EAB5 /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = 042A52431DC9E7B10009EAB5 /* upload.png */; };
 		04944A5A1DCB9C7C005337ED /* 主頁.png in Resources */ = {isa = PBXBuildFile; fileRef = 04944A591DCB9C7C005337ED /* 主頁.png */; };
-		04944A5C1DCB9F26005337ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04944A5B1DCB9F26005337ED /* MainViewController.swift */; };
 		04944A5E1DCBA279005337ED /* 朋友版.png in Resources */ = {isa = PBXBuildFile; fileRef = 04944A5D1DCBA279005337ED /* 朋友版.png */; };
-		04944A601DCBA4A8005337ED /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04944A5F1DCBA4A8005337ED /* FriendViewController.swift */; };
-		04944A621DCBA511005337ED /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04944A611DCBA511005337ED /* FriendTableViewCell.swift */; };
-		04BCEED61DCB3C7500ED8247 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCEED51DCB3C7500ED8247 /* RegisterViewController.swift */; };
 		3837AB2CCDD3C495301EFEDA /* Pods_Vagus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C097FB271229862D5D14D35 /* Pods_Vagus.framework */; };
 		4B618D6E0CFF49FD0B1F9E0B /* Pods_VagusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF956710AFD64212AB56678 /* Pods_VagusUITests.framework */; };
 		5B99E3F9DFAAF9C775A53DFB /* Pods_VagusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E4D3A1F763DA910381CE3C /* Pods_VagusTests.framework */; };
 		EC1BDC871DC9035F0025E648 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC1BDC861DC9035F0025E648 /* GoogleService-Info.plist */; };
-		EC3628421DC8C80600F0739C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3628411DC8C80600F0739C /* AppDelegate.swift */; };
-		EC3628441DC8C80600F0739C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3628431DC8C80600F0739C /* ViewController.swift */; };
 		EC3628471DC8C80600F0739C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3628451DC8C80600F0739C /* Main.storyboard */; };
 		EC3628491DC8C80600F0739C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3628481DC8C80600F0739C /* Assets.xcassets */; };
 		EC36284C1DC8C80600F0739C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC36284A1DC8C80600F0739C /* LaunchScreen.storyboard */; };
@@ -28,10 +22,25 @@
 		EC3628731DC8CA3C00F0739C /* facebookLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3628701DC8CA3C00F0739C /* facebookLogo.png */; };
 		EC3628741DC8CA3C00F0739C /* googleLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3628711DC8CA3C00F0739C /* googleLogo.png */; };
 		EC3628751DC8CA3C00F0739C /* twitterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3628721DC8CA3C00F0739C /* twitterLogo.png */; };
-		EC3628771DC8CFA600F0739C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3628761DC8CFA600F0739C /* LoginViewController.swift */; };
-		EC3628791DC8D19700F0739C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3628781DC8D19700F0739C /* SignUpViewController.swift */; };
-		EC740CF11DCB75EB0084010E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC740CF01DCB75EB0084010E /* User.swift */; };
-		EC740CF31DCB7EFC0084010E /* UserHangler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC740CF21DCB7EFC0084010E /* UserHangler.swift */; };
+		EC6047D01DCC27E0008FB920 /* UserHangler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6047CF1DCC27E0008FB920 /* UserHangler.swift */; };
+		EC6047D21DCC28F7008FB920 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6047D11DCC28F7008FB920 /* MapViewController.swift */; };
+		ECFC65221DCC27830083BB08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFC65091DCC27830083BB08 /* LaunchScreen.storyboard */; };
+		ECFC65231DCC27830083BB08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFC650B1DCC27830083BB08 /* Main.storyboard */; };
+		ECFC65241DCC27830083BB08 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC650E1DCC27830083BB08 /* FriendViewController.swift */; };
+		ECFC65251DCC27830083BB08 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC650F1DCC27830083BB08 /* LoginViewController.swift */; };
+		ECFC65261DCC27830083BB08 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC65101DCC27830083BB08 /* MainViewController.swift */; };
+		ECFC65271DCC27830083BB08 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC65111DCC27830083BB08 /* RegisterViewController.swift */; };
+		ECFC65281DCC27830083BB08 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC65121DCC27830083BB08 /* SignUpViewController.swift */; };
+		ECFC65291DCC27830083BB08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC65131DCC27830083BB08 /* ViewController.swift */; };
+		ECFC652A1DCC27830083BB08 /* facebookLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFC65151DCC27830083BB08 /* facebookLogo.png */; };
+		ECFC652B1DCC27830083BB08 /* googleLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFC65161DCC27830083BB08 /* googleLogo.png */; };
+		ECFC652C1DCC27830083BB08 /* twitterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFC65171DCC27830083BB08 /* twitterLogo.png */; };
+		ECFC652D1DCC27830083BB08 /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFC65181DCC27830083BB08 /* upload.png */; };
+		ECFC652E1DCC27830083BB08 /* 主頁.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFC65191DCC27830083BB08 /* 主頁.png */; };
+		ECFC652F1DCC27830083BB08 /* 朋友版.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFC651A1DCC27830083BB08 /* 朋友版.png */; };
+		ECFC65301DCC27830083BB08 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC651C1DCC27830083BB08 /* User.swift */; };
+		ECFC65321DCC27830083BB08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC651F1DCC27830083BB08 /* AppDelegate.swift */; };
+		ECFC65331DCC27830083BB08 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC65211DCC27830083BB08 /* FriendTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +63,7 @@
 /* Begin PBXFileReference section */
 		042A52431DC9E7B10009EAB5 /* upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upload.png; sourceTree = "<group>"; };
 		04944A591DCB9C7C005337ED /* 主頁.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主頁.png"; sourceTree = "<group>"; };
-		04944A5B1DCB9F26005337ED /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04944A5D1DCBA279005337ED /* 朋友版.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "朋友版.png"; sourceTree = "<group>"; };
-		04944A5F1DCBA4A8005337ED /* FriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
-		04944A611DCBA511005337ED /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
-		04BCEED51DCB3C7500ED8247 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3AF956710AFD64212AB56678 /* Pods_VagusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VagusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C097FB271229862D5D14D35 /* Pods_Vagus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vagus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A96B0E1A19D24B8E2435B5F /* Pods-VagusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VagusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VagusTests/Pods-VagusTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,8 +74,6 @@
 		EB7B59036981D2938F9182B8 /* Pods-Vagus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vagus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vagus/Pods-Vagus.release.xcconfig"; sourceTree = "<group>"; };
 		EC1BDC861DC9035F0025E648 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Vagus/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		EC36283E1DC8C80600F0739C /* Vagus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vagus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC3628411DC8C80600F0739C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC3628431DC8C80600F0739C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC3628461DC8C80600F0739C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC3628481DC8C80600F0739C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC36284B1DC8C80600F0739C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,10 +87,25 @@
 		EC3628701DC8CA3C00F0739C /* facebookLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookLogo.png; sourceTree = "<group>"; };
 		EC3628711DC8CA3C00F0739C /* googleLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = googleLogo.png; sourceTree = "<group>"; };
 		EC3628721DC8CA3C00F0739C /* twitterLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterLogo.png; sourceTree = "<group>"; };
-		EC3628761DC8CFA600F0739C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		EC3628781DC8D19700F0739C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		EC740CF01DCB75EB0084010E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		EC740CF21DCB7EFC0084010E /* UserHangler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHangler.swift; sourceTree = "<group>"; };
+		EC6047CF1DCC27E0008FB920 /* UserHangler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHangler.swift; sourceTree = "<group>"; };
+		EC6047D11DCC28F7008FB920 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		ECFC650A1DCC27830083BB08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECFC650C1DCC27830083BB08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		ECFC650E1DCC27830083BB08 /* FriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		ECFC650F1DCC27830083BB08 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ECFC65101DCC27830083BB08 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ECFC65111DCC27830083BB08 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		ECFC65121DCC27830083BB08 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		ECFC65131DCC27830083BB08 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECFC65151DCC27830083BB08 /* facebookLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookLogo.png; sourceTree = "<group>"; };
+		ECFC65161DCC27830083BB08 /* googleLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = googleLogo.png; sourceTree = "<group>"; };
+		ECFC65171DCC27830083BB08 /* twitterLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterLogo.png; sourceTree = "<group>"; };
+		ECFC65181DCC27830083BB08 /* upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upload.png; sourceTree = "<group>"; };
+		ECFC65191DCC27830083BB08 /* 主頁.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主頁.png"; sourceTree = "<group>"; };
+		ECFC651A1DCC27830083BB08 /* 朋友版.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "朋友版.png"; sourceTree = "<group>"; };
+		ECFC651C1DCC27830083BB08 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ECFC651F1DCC27830083BB08 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECFC65211DCC27830083BB08 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		EE4839BEFD3D0CAD1CAD01AA /* Pods-VagusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VagusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VagusUITests/Pods-VagusUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,17 +185,14 @@
 		EC3628401DC8C80600F0739C /* Vagus */ = {
 			isa = PBXGroup;
 			children = (
-				EC3628411DC8C80600F0739C /* AppDelegate.swift */,
-				EC3628431DC8C80600F0739C /* ViewController.swift */,
-				EC740CF01DCB75EB0084010E /* User.swift */,
-				EC740CF21DCB7EFC0084010E /* UserHangler.swift */,
+				EC6047CE1DCC27E0008FB920 /* API */,
+				ECFC65081DCC27830083BB08 /* Base.lproj */,
+				ECFC650D1DCC27830083BB08 /* Controller */,
+				ECFC65141DCC27830083BB08 /* Image */,
+				ECFC651B1DCC27830083BB08 /* Model */,
+				ECFC651E1DCC27830083BB08 /* System */,
+				ECFC65201DCC27830083BB08 /* View */,
 				EC3628451DC8C80600F0739C /* Main.storyboard */,
-				EC3628761DC8CFA600F0739C /* LoginViewController.swift */,
-				EC3628781DC8D19700F0739C /* SignUpViewController.swift */,
-				04BCEED51DCB3C7500ED8247 /* RegisterViewController.swift */,
-				04944A5B1DCB9F26005337ED /* MainViewController.swift */,
-				04944A5F1DCBA4A8005337ED /* FriendViewController.swift */,
-				04944A611DCBA511005337ED /* FriendTableViewCell.swift */,
 				EC3628481DC8C80600F0739C /* Assets.xcassets */,
 				EC36284A1DC8C80600F0739C /* LaunchScreen.storyboard */,
 				EC36286F1DC8CA3C00F0739C /* Image */,
@@ -216,6 +231,74 @@
 				EC3628721DC8CA3C00F0739C /* twitterLogo.png */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		EC6047CE1DCC27E0008FB920 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EC6047CF1DCC27E0008FB920 /* UserHangler.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		ECFC65081DCC27830083BB08 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC65091DCC27830083BB08 /* LaunchScreen.storyboard */,
+				ECFC650B1DCC27830083BB08 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		ECFC650D1DCC27830083BB08 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC650E1DCC27830083BB08 /* FriendViewController.swift */,
+				ECFC650F1DCC27830083BB08 /* LoginViewController.swift */,
+				ECFC65101DCC27830083BB08 /* MainViewController.swift */,
+				ECFC65111DCC27830083BB08 /* RegisterViewController.swift */,
+				ECFC65121DCC27830083BB08 /* SignUpViewController.swift */,
+				ECFC65131DCC27830083BB08 /* ViewController.swift */,
+				EC6047D11DCC28F7008FB920 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ECFC65141DCC27830083BB08 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC65151DCC27830083BB08 /* facebookLogo.png */,
+				ECFC65161DCC27830083BB08 /* googleLogo.png */,
+				ECFC65171DCC27830083BB08 /* twitterLogo.png */,
+				ECFC65181DCC27830083BB08 /* upload.png */,
+				ECFC65191DCC27830083BB08 /* 主頁.png */,
+				ECFC651A1DCC27830083BB08 /* 朋友版.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		ECFC651B1DCC27830083BB08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC651C1DCC27830083BB08 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECFC651E1DCC27830083BB08 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC651F1DCC27830083BB08 /* AppDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		ECFC65201DCC27830083BB08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC65211DCC27830083BB08 /* FriendTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,16 +419,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECFC652F1DCC27830083BB08 /* 朋友版.png in Resources */,
 				EC36284C1DC8C80600F0739C /* LaunchScreen.storyboard in Resources */,
 				EC3628741DC8CA3C00F0739C /* googleLogo.png in Resources */,
+				ECFC652D1DCC27830083BB08 /* upload.png in Resources */,
 				042A52441DC9E7B10009EAB5 /* upload.png in Resources */,
+				ECFC652A1DCC27830083BB08 /* facebookLogo.png in Resources */,
+				ECFC65231DCC27830083BB08 /* Main.storyboard in Resources */,
 				EC3628751DC8CA3C00F0739C /* twitterLogo.png in Resources */,
 				04944A5E1DCBA279005337ED /* 朋友版.png in Resources */,
 				EC3628491DC8C80600F0739C /* Assets.xcassets in Resources */,
+				ECFC652C1DCC27830083BB08 /* twitterLogo.png in Resources */,
+				ECFC652E1DCC27830083BB08 /* 主頁.png in Resources */,
 				EC3628731DC8CA3C00F0739C /* facebookLogo.png in Resources */,
 				EC3628471DC8C80600F0739C /* Main.storyboard in Resources */,
 				04944A5A1DCB9C7C005337ED /* 主頁.png in Resources */,
+				ECFC65221DCC27830083BB08 /* LaunchScreen.storyboard in Resources */,
 				EC1BDC871DC9035F0025E648 /* GoogleService-Info.plist in Resources */,
+				ECFC652B1DCC27830083BB08 /* googleLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,16 +584,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC3628771DC8CFA600F0739C /* LoginViewController.swift in Sources */,
-				04BCEED61DCB3C7500ED8247 /* RegisterViewController.swift in Sources */,
-				EC740CF11DCB75EB0084010E /* User.swift in Sources */,
-				EC3628441DC8C80600F0739C /* ViewController.swift in Sources */,
-				EC3628791DC8D19700F0739C /* SignUpViewController.swift in Sources */,
-				EC3628421DC8C80600F0739C /* AppDelegate.swift in Sources */,
-				04944A601DCBA4A8005337ED /* FriendViewController.swift in Sources */,
-				04944A621DCBA511005337ED /* FriendTableViewCell.swift in Sources */,
-				EC740CF31DCB7EFC0084010E /* UserHangler.swift in Sources */,
-				04944A5C1DCB9F26005337ED /* MainViewController.swift in Sources */,
+				EC6047D21DCC28F7008FB920 /* MapViewController.swift in Sources */,
+				ECFC65291DCC27830083BB08 /* ViewController.swift in Sources */,
+				ECFC65261DCC27830083BB08 /* MainViewController.swift in Sources */,
+				ECFC65251DCC27830083BB08 /* LoginViewController.swift in Sources */,
+				ECFC65321DCC27830083BB08 /* AppDelegate.swift in Sources */,
+				EC6047D01DCC27E0008FB920 /* UserHangler.swift in Sources */,
+				ECFC65241DCC27830083BB08 /* FriendViewController.swift in Sources */,
+				ECFC65271DCC27830083BB08 /* RegisterViewController.swift in Sources */,
+				ECFC65331DCC27830083BB08 /* FriendTableViewCell.swift in Sources */,
+				ECFC65281DCC27830083BB08 /* SignUpViewController.swift in Sources */,
+				ECFC65301DCC27830083BB08 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +644,22 @@
 				EC36284B1DC8C80600F0739C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ECFC65091DCC27830083BB08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECFC650A1DCC27830083BB08 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ECFC650B1DCC27830083BB08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECFC650C1DCC27830083BB08 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
