@@ -9,9 +9,6 @@
 import UIKit
 import CoreLocation
 
-import UIKit
-import CoreLocation
-
 class LocationManager: NSObject {
     
     // MARK: - Variable
@@ -101,5 +98,9 @@ extension LocationManager : CLLocationManagerDelegate {
             self.nowPlaceMark = placeMarks?.first
         }
         
+        
     }
+    
 }
+
+

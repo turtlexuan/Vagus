@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
 class MapViewController: UIViewController {
+    
+    @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +21,9 @@ class MapViewController: UIViewController {
         locationMG.requestAlwaysInUse()
         locationMG.start()
         
+ //       nowLocation = CLLocation(latitude: getNowLati(), longitude: getNowLogi())
+        
+        centerMapOnLocation(location: locationMG.locationManager.location!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +36,19 @@ class MapViewController: UIViewController {
         let locationMG = LocationManager.sharedInstance
         
     }
-
     
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+                                                                  1000 * 2.0, 1000 * 2.0)
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
+
 
 }
+
+extension MapViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        mapView.showsUserLocation = (status == .authorizedAlways)
+    }
+}
+
