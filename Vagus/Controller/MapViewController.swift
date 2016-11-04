@@ -24,6 +24,7 @@ class MapViewController: UIViewController {
  //       nowLocation = CLLocation(latitude: getNowLati(), longitude: getNowLogi())
         
         centerMapOnLocation(location: locationMG.locationManager.location!)
+        mapView.showsUserLocation = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,6 +36,8 @@ class MapViewController: UIViewController {
         
         let locationMG = LocationManager.sharedInstance
         
+        print(locationMG.getLocation())
+        
     }
     
     func centerMapOnLocation(location: CLLocation) {
@@ -44,11 +47,5 @@ class MapViewController: UIViewController {
     }
 
 
-}
-
-extension MapViewController: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        mapView.showsUserLocation = (status == .authorizedAlways)
-    }
 }
 
